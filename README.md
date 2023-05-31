@@ -30,7 +30,6 @@
 - [PseudoLab 찾아가기](https://pseudo-lab.com/)
 ## Authors
 프로젝트에 참여한 가짜연구소 6기 멤버 명단입니다.
-- [정영상]()
-- [박지원]()
+- [정영상](https://www.linkedin.com/in/video-jeong/)
 - [염성현](https://www.linkedin.com/in/neulvo/)
-- [백상원]()
+- [백상원](https://www.linkedin.com/in/sangwon-baek-74a3241b7/)
