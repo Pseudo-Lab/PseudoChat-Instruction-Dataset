@@ -1,0 +1,241 @@
+/* Set the overall styles for the body */
+body {
+    font-family: Arial, sans-serif; /* Set the font family */
+    line-height: 1; /* Set the line height */
+    margin: 0; /* Remove default margin */
+    margin-left: 200px; /* Set left margin to create space for the sidebar */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styling for the header section */
+header {
+    background-color: #fe9a03; /* Set the background color */
+    color: white; /* Set the text color */
+    text-align: center; /* Center align the text */
+    padding: 1.4rem; /* Add padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for the main content section */
+main {
+    padding: 20px; /* Add padding */
+    margin-bottom: 1rem; /* Add bottom margin */
+    line-height: 2;
+    margin-bottom: 80px;
+}
+
+.pseudolabqr {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+/* Styling for the footer section */
+footer {
+    background-color: #bbbbbb; /* Set the background color */
+    text-align: center; /* Center align the text */
+    padding: 1rem; /* Add padding */
+    margin-top: auto; /* Set top margin to push it to the bottom */
+    margin-bottom: 0; /* Remove default margin */
+    margin-left: 200px; /* Set left margin to create space for the sidebar */
+    position: fixed; /* Fix the position */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Position at the left */
+    right: 0; /* Position at the right */
+    z-index: 1; /* Set the stacking order */
+}
+
+/* Styling for labels */
+label {
+    display: block; /* Display as block */
+    margin-bottom: 0.5rem; /* Add bottom margin */
+}
+
+/* Styling for textareas */
+textarea {
+    width: 100%; /* Set the width to 100% */
+    resize: none; /* Disable textarea resizing */
+    margin-bottom: 1rem; /* Add bottom margin */
+}
+
+/* Styling for buttons */
+button {
+    background-color: #fe9a03; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 0.5rem 1rem; /* Add padding */
+    cursor: pointer; /* Set cursor to pointer */
+    border: none; /* Remove border */
+}
+
+/* Styling for button hover effect */
+button:hover {
+    background-color: #ffcc80; /* Change background color on hover */
+    transition: 0.7s; /* Add transition effect */
+}
+
+/* Styling for the sidebar */
+.sidebar {
+    width: 200px; /* Set the width */
+    height: 100%; /* Set the height to cover the entire screen */
+    position: fixed; /* Fix the position */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    background-color: #e0e0e0; /* Set the background color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Set flex direction to column */
+    justify-content: flex-start; /* Align items to flex-start */
+    align-items: center; /* Center align the items */
+}
+
+/* Styling for the sidebar image */
+.sidebar img {
+    margin-top: 1rem; /* Set top margin */
+    width: 100px; /* Set the width */
+    height: 100px; /* Set the height */
+}
+
+/* Styling for the sidebar buttons */
+.sidebar button {
+    margin: 1px; /* Set margin */
+    width: 200px; /* Set the width */
+    height: 50px; /* Set the height */
+    background-color: #0077A3; /* Set the background color */
+    border: none; /* Remove border */
+    color: white; /* Set the text color */
+    font-size: 18px; /* Set the font size */
+    line-height: 40px; /* Set the line height */
+}
+
+/* Styling for sidebar button hover effect */
+.sidebar button:hover {
+    background-color: #80bbd1; /* Change background color on hover */
+    transition: 0.3s; /* Add transition effect */
+}
+
+/* Styling for the submit button in the data collection form */
+#data-collection-form button[type="submit"] {
+    float: right; /* Float the button to the right */
+    width: 150px; /* Set the width */
+    height: 50px; /* Set the height */
+    position: sticky; /* Make the position sticky */
+    bottom: 10px; /* Position at the bottom */
+    z-index: 2; /* Set the stacking order */
+}
+
+#data-collection-form h2 {
+    margin: 0;
+}
+
+.split-container {
+    display: flex;
+    margin: 0;
+}
+
+.split-container-left {
+    margin: 10px;
+}
+
+.split-container-right {
+    margin: 10px;
+    border: 1px solid #000;
+}
+
+/* Styling for user guideline */
+.user-guideline {
+    margin-top: 0px; /* Set top margin */
+}
+
+/* Styling for prompt example */
+.prompt-example {
+    margin-top: 20px; /* Set top margin */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    header,
+    footer {
+        padding: 0.5rem; /* Reduce padding */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 400px) {
+    header,
+    footer {
+        padding: 0.2rem; /* Reduce padding */
+    }
+}
+
+/* Styling for cards */
+.card {
+    border: 2px solid #bbbbbb; /* Set border */
+    border-radius: 4px; /* Set border radius */
+    padding: 1rem; /* Add padding */
+    text-align: left; /* Align text to the left */
+    cursor: pointer; /* Set cursor to pointer */
+    flex: 1; /* Allow flex-grow */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Set flex direction to column */
+    justify-content: space-between; /* Space items vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+/* Styling for card headings */
+.card h3 {
+    font-size: 20px; /* Set the font size */
+    margin-bottom: 0.5rem; /* Add bottom margin */
+}
+
+/* Styling for card paragraphs */
+.card p {
+    font-size: 16px; /* Set the font size */
+    color: #666666; /* Set the text color */
+    margin-bottom: 1rem; /* Add bottom margin */
+}
+
+/* Styling for card buttons */
+.card button {
+    background-color: #fe9a03; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 0.5rem 1rem; /* Add padding */
+    cursor: pointer; /* Set cursor to pointer */
+    border: none; /* Remove border */
+    font-size: 16px; /* Set the font size */
+}
+.card button:hover {
+    background-color: #ffcc80; /* Change background color on hover */
+    transition: 0.3s; /* Add transition effect */
+}
+
+/* Styling for card hover effect */
+.card:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+    transition: 0.3s; /* Add transition effect */
+}
+
+/* Styling for the main content section */
+.main {
+    padding: 2rem; /* Add padding */
+    margin-bottom: 1rem; /* Add bottom margin */
+}
+
+/* Styling for the card container */
+.card-container {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* Set the number of columns */
+    gap: 1rem; /* Add gap between grid items */
+}
+
+/* Media query for smaller screens - adjust the number of columns */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Set the number of columns */
+    }
+}
+
+/* Media query for even smaller screens - adjust the number of columns */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Set the number of columns */
+    }
+}

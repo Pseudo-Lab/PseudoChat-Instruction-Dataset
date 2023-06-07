@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoChat Dataset Collection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <style>
+        .split-container {
+            display: flex;
+        }
+
+        .split-container > div {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PseudoChat Dataset Collection</h1>
+        <div class="sidebar">
+            <a href="/">
+                <img src="/static/images/PseudoLabLogo.png" alt="PseudoLab Logo">
+            </a>
+            <button onclick="openIntroduction()">Introduction</button>
+            <button onclick="openInitialTask()">Initial Task</button>
+            <button onclick="openMakePrompt()">Make Prompt</button>
+            <button onclick="openMakeCompletion()">Make Completion</button>
+            <button onclick="openDashboard()">Dashboard</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Classification</h2>
+        <div class="split-container">
+            <div class="split-container-left">
+                <form id="data-collection-form">
+                    <h2>Instruction:</h2>
+                    <textarea type="text" id="instruction-input" name="instruction-input" rows="3" required></textarea>
+            
+                    <h2>Input:</h2>
+                    <textarea type="text" id="input-input" name="input-input" rows="3"></textarea>
+            
+                    <h2>Output:</h2>
+                    <textarea type="text" id="output-input" name="output-input" rows="3" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </div>            
+            <div class="split-container-right">
+                <div>
+                    <h2 class="user-guideline">User Guideline</h2>
+                    <ul>
+                        <li>주어진 기준에 따라 정보를 분류하는 작업입니다.</li>
+                        <li>Instruction에 분류 기준을 명시해 주세요.</li>
+                        <li>Input에 분류할 대상을 작성해 주세요.</li>
+                        <li>Output에 분류 결과를 작성해 주세요. 문장 또는 일정한 형식을 갖춘 정보 묶음으로 표현해 주세요.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="prompt-example">Prompt Example</h2>
+                    <h3>Instruction</h3>
+                    <ul>
+                        <li>다음을 컴퓨터 비전, 자연어처리로 분류하십시오.</li>
+                    </ul>
+                    <h3>Input</h3>
+                    <ul>
+                        <li>이미지 분류, 객체인식, 감정분석, 기계번역</li>
+                    </ul>
+                    <h3>Output</h3>
+                    <ul>
+                        <li>컴퓨터비전: 이미지 분류, 객체인식 , 자연어처리 : 감정분석, 기계번역</li>
+                    </ul>
+                    <p>Reference : 직접 작성</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for contributing to PseudoChat training data!</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoChat Dataset Collection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <style>
+        .split-container {
+            display: flex;
+        }
+
+        .split-container > div {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PseudoChat Dataset Collection</h1>
+        <div class="sidebar">
+            <a href="/">
+                <img src="/static/images/PseudoLabLogo.png" alt="PseudoLab Logo">
+            </a>
+            <button onclick="openIntroduction()">Introduction</button>
+            <button onclick="openInitialTask()">Initial Task</button>
+            <button onclick="openMakePrompt()">Make Prompt</button>
+            <button onclick="openMakeCompletion()">Make Completion</button>
+            <button onclick="openDashboard()">Dashboard</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Brainstorming</h2>
+        <div class="split-container">
+            <div class="split-container-left">
+                <form id="data-collection-form">
+                    <h2>Instruction:</h2>
+                    <textarea type="text" id="instruction-input" name="instruction-input" rows="3" required></textarea>
+            
+                    <h2>Input:</h2>
+                    <textarea type="text" id="input-input" name="input-input" rows="3"></textarea>
+            
+                    <h2>Output:</h2>
+                    <textarea type="text" id="output-input" name="output-input" rows="3" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </div>            
+            <div class="split-container-right">
+                <div>
+                    <h2 class="user-guideline">User Guideline</h2>
+                    <ul>
+                        <li>특정 대상에 대한 아이디어 목록을 제시하는 작업입니다.</li>
+                        <li>Instruction에 무엇에 대한 아이디어를 제시해야 할지 명시해 주세요. 총 몇 개의 아이디어를 반환하기를 원하는지 작성해 주세요.</li>
+                        <li>Output에 아이디어 목록과 그에 대한 간단한 설명을 작성해 주세요.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="prompt-example">Prompt Example</h2>
+                    <h3>Instruction</h3>
+                    <ul>
+                        <li>직장에서 승진하기 위한 5가지 팁을 적어보세요.</li>
+                    </ul>
+                    <h3>Input</h3>
+                    <ul>
+
+                    </ul>
+                    <h3>Output</h3>
+                    <ul>
+                        <li>일의 목적을 정확히 이해하고, 목표를 설정하세요.</li>
+                        <li>자신의 업무와 관련된 체계적인 지식을 습득하세요.</li>
+                        <li>팀과의 협력을 통해 일을 수행하세요.</li>
+                        <li>효율적인 커뮤니케이션을 통해 직장 내외의 인적 네트워크를 확장하세요.</li>
+                        <li>전문적인 태도로 업무에 대해 책임감을 가지세요.</li>
+                    </ul>
+                    <p>Reference :</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for contributing to PseudoChat training data!</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+</body>
+
+</html>

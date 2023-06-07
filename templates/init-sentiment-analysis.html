@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoChat Dataset Collection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <style>
+        .split-container {
+            display: flex;
+        }
+
+        .split-container > div {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PseudoChat Dataset Collection</h1>
+        <div class="sidebar">
+            <a href="/">
+                <img src="/static/images/PseudoLabLogo.png" alt="PseudoLab Logo">
+            </a>
+            <button onclick="openIntroduction()">Introduction</button>
+            <button onclick="openInitialTask()">Initial Task</button>
+            <button onclick="openMakePrompt()">Make Prompt</button>
+            <button onclick="openMakeCompletion()">Make Completion</button>
+            <button onclick="openDashboard()">Dashboard</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Sentiment Analysis</h2>
+        <div class="split-container">
+            <div class="split-container-left">
+                <form id="data-collection-form">
+                    <h2>Instruction:</h2>
+                    <textarea type="text" id="instruction-input" name="instruction-input" rows="3" required></textarea>
+            
+                    <h2>Input:</h2>
+                    <textarea type="text" id="input-input" name="input-input" rows="3"></textarea>
+            
+                    <h2>Output:</h2>
+                    <textarea type="text" id="output-input" name="output-input" rows="3" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </div>            
+            <div class="split-container-right">
+                <div>
+                    <h2 class="user-guideline">User Guideline</h2>
+                    <ul>
+                        <li>주어진 텍스트의 어조가 어떠한 감정을 나타내고 있는지 분석하는 작업입니다.</li>
+                        <li>Instruction에 감정에 대한 질문을 작성해 주세요.</li>
+                        <li>Input에 대상 지문을 작성해 주세요.</li>
+                        <li>Output에 지문의 감정을 작성해 주세요.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="prompt-example">Prompt Example</h2>
+                    <h3>Instruction</h3>
+                    <ul>
+                        <li>다음 문장의 감정은 무엇입니까? 긍정 또는 부정으로 나타내 주세요.</li>
+                    </ul>
+                    <h3>Input</h3>
+                    <ul>
+                        <li>자연어 처리 분야는 항상 어색하고 낯설지만, 이렇게 세미나를 통해 조금씩 알아갈 수 있어서 좋은 것 같다. Transformer 모델처럼 자연어 처리에서 높은 성능을 보이기도 하면서 시계열 데이터, 이미지 데이터에도 잘 활용되는 모델도 있는 것처럼, 자연어 처리 공부도 세미나를 바탕으로 하면 좋을 것 같다는 생각을 했다.</li>
+                    </ul>
+                    <h3>Output</h3>
+                    <ul>
+                        <li>긍정</li>
+                    </ul>
+                    <p>Reference : 고려대 연구실 세미나 일부</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for contributing to PseudoChat training data!</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+</body>
+
+</html>

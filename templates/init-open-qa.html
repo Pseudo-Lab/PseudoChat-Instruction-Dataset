@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoChat Dataset Collection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <style>
+        .split-container {
+            display: flex;
+        }
+
+        .split-container > div {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PseudoChat Dataset Collection</h1>
+        <div class="sidebar">
+            <a href="/">
+                <img src="/static/images/PseudoLabLogo.png" alt="PseudoLab Logo">
+            </a>
+            <button onclick="openIntroduction()">Introduction</button>
+            <button onclick="openInitialTask()">Initial Task</button>
+            <button onclick="openMakePrompt()">Make Prompt</button>
+            <button onclick="openMakeCompletion()">Make Completion</button>
+            <button onclick="openDashboard()">Dashboard</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>OpenQA</h2>
+        <div class="split-container">
+            <div class="split-container-left">
+                <form id="data-collection-form">
+                    <h2>Instruction:</h2>
+                    <textarea type="text" id="instruction-input" name="instruction-input" rows="3" required></textarea>
+            
+                    <h2>Input:</h2>
+                    <textarea type="text" id="input-input" name="input-input" rows="3"></textarea>
+            
+                    <h2>Output:</h2>
+                    <textarea type="text" id="output-input" name="output-input" rows="3" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="split-container-right">
+                <div>
+                    <h2 class="user-guideline">User Guideline</h2>
+                    <ul>
+                        <li>질문에 대한 답을 구하는 작업입니다.</li>
+                        <li>Instruction에 질문을 작성해 주세요. 질문은 구체적으로 작성해 주세요.</li>
+                        <li>Output에 질문에 대한 답변을 작성해 주세요. 사실 기반의 중립적인 답변을 작성해 주세요.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="prompt-example">Prompt Example</h2>
+                    <h3>Instruction</h3>
+                    <ul>
+                        <li>SparkSql의 특징은 무엇인가요?</li>
+                    </ul>
+                    <h3>Input</h3>
+                    <ul>
+                        
+                    </ul>
+                    <h3>Output</h3>
+                    <ul>
+                        <li>다양한 구조화된 형식(예: JSON, Hive 테이블, Parquet, Avro, ORC, CSV)으로 데이터를 읽고 쓸 수 있다.</li>
+                        <li>Tableau, Power BI, Talend와 같은 외부 비즈니스 인텔리전스(BI)부터 MySQL 및 PostgreSQL과 같은 RDBMS등 에서 JDBC/ODBC 커넥터를 사용하여 데이터를 쿼리할 수 있다.</li>
+                        <li>Spark 애플리케이션의 데이터베이스에 테이블 또는 view로 저장된 정형 데이터와 상호 작용할 수 있는 프로그래밍 방식 인터페이스를 제공한다.</li>
+                        <li>정형 데이터에 대해 SQL 쿼리를 실행하기 위한 대화형 셸을 제공한다.</li>
+                    </ul>
+                    <p>Reference : wikipedia, 가짜연구소 sparksql</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for contributing to PseudoChat training data!</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoChat Dataset Collection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <style>
+        .split-container {
+            display: flex;
+        }
+
+        .split-container > div {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PseudoChat Dataset Collection</h1>
+        <div class="sidebar">
+            <a href="/">
+                <img src="/static/images/PseudoLabLogo.png" alt="PseudoLab Logo">
+            </a>
+            <button onclick="openIntroduction()">Introduction</button>
+            <button onclick="openInitialTask()">Initial Task</button>
+            <button onclick="openMakePrompt()">Make Prompt</button>
+            <button onclick="openMakeCompletion()">Make Completion</button>
+            <button onclick="openDashboard()">Dashboard</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Generation</h2>
+        <div class="split-container">
+            <div class="split-container-left">
+                <form id="data-collection-form">
+                    <h2>Instruction:</h2>
+                    <textarea type="text" id="instruction-input" name="instruction-input" rows="3" required></textarea>
+            
+                    <h2>Input:</h2>
+                    <textarea type="text" id="input-input" name="input-input" rows="3"></textarea>
+            
+                    <h2>Output:</h2>
+                    <textarea type="text" id="output-input" name="output-input" rows="3" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </div>            
+            <div class="split-container-right">
+                <div>
+                    <h2 class="user-guideline">User Guideline</h2>
+                    <ul>
+                        <li>새로운 텍스트를 작성하는 작업입니다.</li>
+                        <li>Instruction에 텍스트의 주제 및 제한 사항을 명시해 주세요. </li>
+                        <li>Output에 생성 텍스트를 작성해 주세요. 생성된 Output에는 거짓이 포함되면 안 됩니다. 사실 기반의 중립적인 텍스트가 작성될 수 있도록 유의해 주세요.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="prompt-example">Prompt Example</h2>
+                    <h3>Instruction</h3>
+                    <ul>
+                        <li>한 사람의 성격을 나타내는 문장을 생성하십시오.</li>
+                    </ul>
+                    <h3>Input</h3>
+                    <h3>Output</h3>
+                    <ul>
+                        <li>"나는 자주 여행하거나, 신나는 이벤트를 즐기며, 새로운 경험을 해보기를 좋아합니다.”</li>
+                    </ul>
+                    <p>Reference : KoAlpaca</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for contributing to PseudoChat training data!</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+</body>
+
+</html>

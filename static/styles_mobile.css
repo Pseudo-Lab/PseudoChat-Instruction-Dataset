@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+}
+
+header {
+    background-color: #fe9a03;
+    color: white;
+    text-align: center;
+    padding: 1.4rem;
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #bbbbbb;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #fe9a03;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #ffcc80;
+    transition: 0.3s;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar img {
+    margin-top: 1rem; /* 로고와 버튼 간 간격 조절 */
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar button {
+    margin: 1px;
+    width: 200px;
+    height: 50px;
+    background-color: #0077A3;
+    border: none;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.sidebar button:hover {
+    background-color: #80bbd1;
+    transition: 0.3s;
+}
+
+#data-collection-form button[type="submit"] {
+    float: right;
+    width: 150px;
+    height: 50px;
+    position: sticky;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.user-guideline {
+    margin-top: 0px;
+}
+
+.prompt-example {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    header,
+    footer {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    header,
+    footer {
+        padding: 0.2rem;
+    }
+}
+
+.card {
+    border: 2px solid #bbbbbb;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: left;
+    cursor: pointer;
+    flex: 1;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card button {
+    background-color: #fe9a03;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.card:hover {
+    background-color: #e0e0e0;
+    transition: 0.3s;
+}
+
+.main {
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-left: 0;
+    }
+
+    header {
+        padding: 0.8rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 0.8rem;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .sidebar img {
+        margin-top: 0;
+        margin-right: 1rem;
+    }
+
+    .sidebar button {
+        margin: 1px;
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

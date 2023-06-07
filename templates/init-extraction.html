@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoChat Dataset Collection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <style>
+        .split-container {
+            display: flex;
+        }
+
+        .split-container > div {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PseudoChat Dataset Collection</h1>
+        <div class="sidebar">
+            <a href="/">
+                <img src="/static/images/PseudoLabLogo.png" alt="PseudoLab Logo">
+            </a>
+            <button onclick="openIntroduction()">Introduction</button>
+            <button onclick="openInitialTask()">Initial Task</button>
+            <button onclick="openMakePrompt()">Make Prompt</button>
+            <button onclick="openMakeCompletion()">Make Completion</button>
+            <button onclick="openDashboard()">Dashboard</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Extraction</h2>
+        <div class="split-container">
+            <div class="split-container-left">
+                <form id="data-collection-form">
+                    <h2>Instruction:</h2>
+                    <textarea type="text" id="instruction-input" name="instruction-input" rows="3" required></textarea>
+            
+                    <h2>Input:</h2>
+                    <textarea type="text" id="input-input" name="input-input" rows="3"></textarea>
+            
+                    <h2>Output:</h2>
+                    <textarea type="text" id="output-input" name="output-input" rows="3" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </div>            
+            <div class="split-container-right">
+                <div>
+                    <h2 class="user-guideline">User Guideline</h2>
+                    <ul>
+                        <li>주어진 지문에서 정보를 추출하는 작업입니다.</li>
+                        <li>Instruction에 어떠한 정보를 추출해야 하는지 명시해 주세요. 추출의 목적을 함께 작성해 주세요.</li>
+                        <li>Input에 참조할 지문을 작성해 주세요.</li>
+                        <li>Output에 결과문을 작성해 주세요. 결과문은 요구하는 정보를 담고 있어야 합니다.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="prompt-example">Prompt Example</h2>
+                    <h3>Instruction</h3>
+                    <ul>
+                        <li>다음 전자 상거래 사이트의 상품 리뷰를 읽고 배송 부서에 대한 피드백을 추출해 주세요.</li>
+                    </ul>
+                    <h3>Input</h3>
+                    <ul>
+                        <li>딸의 생일을 기념해 팬더 봉제 인형을 구입했습니다. 부드럽고 매우 귀엽습니다. 가격에 비해 크기가 조금 작습니다. 같은 가격의 더 큰 상품이 있었을 지도 모르겠네요. 예상 보다 하루 일찍 도착했습니다.</li>
+                    </ul>
+                    <h3>Output</h3>
+                    <ul>
+                        <li>상품이 예상 보다 하루 일찍 도착하였습니다.</li>
+                    </ul>
+                    <p>Reference : ChatGPT Prompt Engineering for Developers</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for contributing to PseudoChat training data!</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+</body>
+
+</html>

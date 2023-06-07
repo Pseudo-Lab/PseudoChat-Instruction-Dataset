@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoChat Dataset Collection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>PseudoChat Dataset Collection</h1>
+        <div class="sidebar">
+            <a href="/">
+                <img src="/static/images/PseudoLabLogo.png" alt="PseudoLab Logo">
+            </a>
+            <button onclick="openIntroduction()">Introduction</button>
+            <button onclick="openInitialTask()">Initial Task</button>
+            <button onclick="openMakePrompt()">Make Prompt</button>
+            <button onclick="openMakeCompletion()">Make Completion</button>
+            <button onclick="openDashboard()">Dashboard</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Dashboard</h2>
+        <p>Comming soon...!</p>
+    </main>
+
+    <footer>
+        <p>Thank you for contributing to PseudoChat training data!</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+    <script>
+        function openIntroduction() {
+            window.location.href = "/introduction";
+        }
+
+        function openInitialTask() {
+            window.location.href = "/initial-task";
+        }
+
+        function openMakePrompt() {
+            window.location.href = "/make-prompt";
+        }
+
+        function openMakeCompletion() {
+            window.location.href = "/make-completion";
+        }
+
+        function openDashboard() {
+            window.location.href = "/dashboard";
+        }
+    </script>
+</body>
+
+</html>

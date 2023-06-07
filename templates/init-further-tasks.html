@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoChat Dataset Collection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <style>
+        .split-container {
+            display: flex;
+        }
+
+        .split-container > div {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PseudoChat Dataset Collection</h1>
+        <div class="sidebar">
+            <a href="/">
+                <img src="/static/images/PseudoLabLogo.png" alt="PseudoLab Logo">
+            </a>
+            <button onclick="openIntroduction()">Introduction</button>
+            <button onclick="openInitialTask()">Initial Task</button>
+            <button onclick="openMakePrompt()">Make Prompt</button>
+            <button onclick="openMakeCompletion()">Make Completion</button>
+            <button onclick="openDashboard()">Dashboard</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Further Tasks</h2>
+        <ul>
+            <li>Description Task : 주어진 개념에 대해 설명하는 작업</li>
+            <li>Entailment Task : 두 문장이 연결되는지에 대한 작업</li>
+            <li>(Multiple / Binary) Choice task : 주어진 선택지 내에서 정답을 고르는 작업</li>
+            <li>Calculation Task : 주어진 지문에서 정량 데이터를 뽑아내 계산하는 작업</li>
+            <li>Grammar Check Task : 주어진 지문이 문법적으로 올바른지 검사 또는 수정하는 작업</li>
+            <li>Code Generation Task : 요구 사항에 맞는 코드를 작성하는 작업</li>
+            <li>그 외 다양한 Generation Tasks...</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Thank you for contributing to PseudoChat training data!</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+</body>
+
+</html>

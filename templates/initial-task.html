@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoChat Dataset Collection - Initial Task</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>PseudoChat Dataset Collection</h1>
+        <div class="sidebar">
+            <a href="/">
+                <img src="/static/images/PseudoLabLogo.png" alt="PseudoLab Logo">
+            </a>
+            <button onclick="openIntroduction()">Introduction</button>
+            <button onclick="openInitialTask()">Initial Task</button>
+            <button onclick="openMakePrompt()">Make Prompt</button>
+            <button onclick="openMakeCompletion()">Make Completion</button>
+            <button onclick="openDashboard()">Dashboard</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Initial Task</h2>
+
+        <div class="card-container">
+            <div class="card" onclick="openClosedQA()">
+                <h3>폐쇄형 질의 응답 (Closed QA)</h3>
+                <p>주어진 지문 안에서 답을 찾아 응답하는 작업입니다.</p>
+                <button>Start Closed QA Task</button>
+            </div>
+        
+            <div class="card" onclick="openOpenQA()">
+                <h3>개방형 질의 응답 (Open QA)</h3>
+                <p>질의에 대해 새로운 텍스트를 작성하는 작업입니다.</p>
+                <button>Start Open QA Task</button>
+            </div>
+        
+            <div class="card" onclick="openExtraction()">
+                <h3>추출 (Extraction)</h3>
+                <p>주어진 지문에서 정보를 추출하는 작업입니다.</p>
+                <button>Start Extract Task</button>
+            </div>
+        
+            <div class="card" onclick="openCompletion()">
+                <h3>자동 완성 (Completion)</h3>
+                <p>주어진 텍스트를sdf업입니다.</p>
+                <button>Start Completion Task</button>
+            </div>
+        
+            <div class="card" onclick="openSummarization()">
+                <h3>요약 (Summarization)</h3>
+                <p>주어진 지문을 요약하는 작업입니다.</p>
+                <button>Start Summarization Task</button>
+            </div>
+        
+            <div class="card" onclick="openTranslation()">
+                <h3>번역 (Translation)</h3>
+                <p>주어진 지문을 다른 언어로 번역하는 작업입니다.</p>
+                <button>Start Translation Task</button>
+            </div>
+        
+            <div class="card" onclick="openRewrite()">
+                <h3>재작성 (Rewrite)</h3>
+                <p>주어진 텍스트를 지시 사항에 맞게 재작성하는 작업입니다.</p>
+                <button>Start Rewrite Task</button>
+            </div>
+        
+            <div class="card" onclick="openClassification()">
+                <h3>분류 (Classification)</h3>
+                <p>주어진 기준에 따라 정보를 분류하는 작업입니다.</p>
+                <button>Start Classification Task</button>
+            </div>
+        
+            <div class="card" onclick="openSentimentAnalysis()">
+                <h3>감정 분석 (Sentiment Analysis)</h3>
+                <p>주어진 텍스트의 어조가 어떠한 감정을 나타내고 있는지 분석하는 작업입니다.</p>
+                <button>Start Sentiment Analysis Task</button>
+            </div>
+        
+            <div class="card" onclick="openGeneration()">
+                <h3>생성 (Generation)</h3>
+                <p>새로운 텍스트를 작성하는 작업입니다.</p>
+                <button>Start Generation Task</button>
+            </div>
+        
+            <div class="card" onclick="openBrainstorming()">
+                <h3>브레인스토밍 (Brainstorming)</h3>
+                <p>특정 대상에 대한 아이디어 목록을 제시하는 작업입니다.</p>
+                <button>Start Brainstorming Task</button>
+            </div>
+
+            <div class="card" onclick="openFurtherTasks()">
+                <h3>Further Tasks</h3>
+                <p>Description Task, Entailment Task, etc.</p>
+                <button>Check Futher Tasks</button>
+            </div>
+
+        </div>        
+    </main>
+    <footer>
+        <p>Thank you for contributing to PseudoChat training data!</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+    <script>
+
+        function openIntroduction() {
+            window.location.href = "/introduction";
+        }
+
+        function openInitialTask() {
+            window.location.href = "/initial-task";
+        }
+
+        function openClosedQA() {
+            window.location.href = "/init-closed-qa";
+        }
+
+        function openOpenQA() {
+            window.location.href = "/init-open-qa";
+        }
+
+        function openExtraction() {
+            window.location.href = "/init-extraction";
+
+        }
+        function openCompletion() {
+            window.location.href = "/init-completion";
+        }
+
+        function openSummarization() {
+            window.location.href = "/init-summarization";
+        }
+
+        function openTranslation() {
+            window.location.href = "/init-translation";
+        }
+
+        function openRewrite() {
+            window.location.href = "/init-rewrite";
+        }
+
+        function openClassification() {
+            window.location.href = "/init-classification";
+        }
+
+        function openSentimentAnalysis() {
+            window.location.href = "/init-sentiment-analysis";
+        }
+
+        function openGeneration() {
+            window.location.href = "/init-generation";
+        }
+
+        function openBrainstorming() {
+            window.location.href = "/init-brainstorming";
+        }
+
+        function openFurtherTasks() {
+            window.location.href = "/init-further-tasks";
+        }
+
+        function openMakePrompt() {
+            window.location.href = "/make-prompt";
+        }
+
+        function openMakeCompletion() {
+            window.location.href = "/make-completion";
+        }
+
+        function openDashboard() {
+            window.location.href = "/dashboard";
+        }
+
+    </script>
+</body>
+
+</html>
+
+       
