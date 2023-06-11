@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         formData.append('output', outputInput);
 
         // Send a POST request to submit the data
-        const response = await fetch('/submit-data', {
+        const response = await fetch('/submit-init-data', {
             method: 'POST',
             body: formData
         });

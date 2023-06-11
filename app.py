@@ -2,11 +2,14 @@ from flask import Flask, render_template, request, jsonify
 import json
 import os
 from datetime import datetime
+from google.oauth2 import id_token
+from google.auth.transport import requests
+import time
 
 app = Flask(__name__, static_url_path='/static')
 
-@app.route('/submit-data', methods=['POST'])
-def submit_data():
+@app.route('/submit-init-data', methods=['POST'])
+def submit_init_data():
     instruction = request.form.get('instruction')
     input_data = request.form.get('input')
     output = request.form.get('output')

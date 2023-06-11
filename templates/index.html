@@ -23,25 +23,6 @@
         </div>
     </header>
 
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script>
-        function handleCredentialResponse(response) {
-          console.log("Encoded JWT ID token: " + response.credential);
-        }
-        window.onload = function () {
-          google.accounts.id.initialize({
-            client_id: "35605537170-ggnkqn59jen3i2ainfgrbljqjpa15j82.apps.googleusercontent.com",
-            callback: handleCredentialResponse
-          });
-          google.accounts.id.renderButton(
-            document.getElementById("buttonDiv"),
-            { theme: "outline", size: "large" }  // customization attributes
-          );
-          google.accounts.id.prompt(); // also display the One Tap dialog
-        }
-    </script>
-    <div id="buttonDiv"></div>
-
     <main>
         <h2>Wellcome to PseudoChat Instruction Dataset Building Project!</h2>
         <ul>
@@ -54,27 +35,6 @@
     </footer>
 
     <script src="/static/scripts.js"></script>
-    <script>
-        function openIntroduction() {
-            window.location.href = "/introduction";
-        }
-
-        function openInitialTask() {
-            window.location.href = "/initial-task";
-        }
-
-        function openMakePrompt() {
-            window.location.href = "/make-prompt";
-        }
-
-        function openMakeCompletion() {
-            window.location.href = "/make-completion";
-        }
-
-        function openDashboard() {
-            window.location.href = "/dashboard";
-        }
-    </script>
 </body>
 
 </html>
